@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Sauvé — Portfolio Ingénierie Mécanique</title>
+  <meta name="description" content="Portfolio de projets en génie mécanique : Baja SAE, thermofluide, fabrication et bricolage personnel.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Aperçu de partage (LinkedIn, courriel, réseaux sociaux) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Joseph Sauvé — Portfolio Ingénierie Mécanique">
+  <meta property="og:description" content="Portfolio de projets en génie mécanique : Baja SAE, thermofluide, fabrication et bricolage personnel.">
+  <meta property="og:image" content="image/baja-atelier.jpg">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE / NAVIGATION ===== -->
+  <header class="site-header">
+    <!-- Petit véhicule Baja qui traverse le bandeau au chargement de la page,
+         puis reste figé à droite (voir .baja-runner dans style.css) -->
+    <div class="baja-runner" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 22 L10 12 L40 12 L46 18 L58 18 L58 22 Z" fill="var(--color-accent)"/>
+        <path d="M14 12 L18 4 L34 4 L38 12" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="48" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="16" cy="24" r="2.5" fill="var(--color-surface)"/>
+        <circle cx="48" cy="24" r="2.5" fill="var(--color-surface)"/>
+      </svg>
+    </div>
+    <div class="container header-inner">
+      <a href="#top" class="logo">J. Sauvé</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#accueil">Accueil</a>
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Génie mécanique</p>
+          <h1>Joseph Sauvé</h1>
+          <p class="hero-subtitle">
+            Finissant en génie mécanique à l'Université de Sherbrooke, passionné par la conception
+            de produits mécaniques innovants à impact environnemental positif.
+          </p>
+          <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+        <img src="image/baja-atelier.jpg" alt="Joseph Sauvé au travail sur la suspension du véhicule Baja SAE" class="hero-img">
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section class="projects" id="projets">
+      <div class="container">
+        <h2 class="section-title">Projets</h2>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <img src="image/baja-oregon.jpg" alt="Véhicule Baja SAE de l'Université de Sherbrooke en compétition en Oregon, 3e place" class="project-card-img">
+            <div class="project-card-body">
+              <div class="project-card-tag">Baja SAE</div>
+              <h3>Suspension &amp; direction</h3>
+              <p>Directeur Suspension et Direction — conception de moyeux, porte-fusées et géométrie de suspension pour le club Baja SAE.</p>
+              <a href="baja-sae.html" class="project-link">Détails →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="image/liquidc/prototype_cad_global.jpg" alt="Rendu CAO du prototype de machine de liquéfaction de CO2 LiquidC" class="project-card-img">
+            <div class="project-card-body">
+              <div class="project-card-tag">Thermofluide</div>
+              <h3>LiquidC — Liquéfaction de CO2</h3>
+              <p>Projet de fin de bacc pour Skyrenu inc. — conception des sous-systèmes de déshumidification et de remplissage.</p>
+              <a href="liquidc.html" class="project-link">Détails →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="image/perso/velo-cargo-2.jpg" alt="Vélo cargo fait maison, un des projets personnels de Joseph Sauvé" class="project-card-img">
+            <div class="project-card-body">
+              <div class="project-card-tag">Bricolage</div>
+              <h3>Projets personnels</h3>
+              <p>Vélo cargo, guidon sur mesure, foyer, bibliothèque et plus — soudure et usinage sur mon temps libre.</p>
+              <a href="projets-perso.html" class="project-link">Détails →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-body">
+              <div class="project-card-tag">Passion / Sport</div>
+              <h3>Chaîne YouTube</h3>
+              <p>Un mélange de mes réalisations en montage vidéo et de sport.</p>
+              <a href="https://www.youtube.com/channel/UC5sv7qZfav84lRfaPwmZs-A/videos" class="project-link" target="_blank" rel="noopener">Voir la chaîne →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section class="about" id="apropos">
+      <div class="container">
+        <h2 class="section-title">À propos</h2>
+        <div class="about-content">
+          <img src="image/finissant.jpg" alt="Joseph Sauvé lors de sa graduation, tenant une fusée de suspension usinée" class="about-photo">
+          <div class="about-text">
+            <p>
+              Je m'appelle Joseph Sauvé, finissant en génie mécanique à l'Université de Sherbrooke.
+              Ma passion réside dans la conception de produits mécaniques innovants ayant un impact
+              environnemental positif.
+            </p>
+            <p>
+              Au cours de mon parcours, notamment comme directeur suspension et direction pour le club
+              Baja SAE, j'ai développé une solide expertise en conception 3D, en simulation FEA et en
+              fabrication pratique. Ces expériences m'ont permis d'aborder des problèmes complexes avec
+              calme et rigueur, tout en apprenant à transformer des concepts audacieux en réalités
+              fonctionnelles.
+            </p>
+            <p>
+              Je souhaite aujourd'hui intégrer une organisation qui partage mes valeurs de durabilité
+              et d'innovation pour concevoir des produits qui répondent aux besoins des gens sans
+              encourager la surconsommation. Je cherche à mettre mon talent en prototypage et ma
+              polyvalence technique au profit d'un projet porteur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Envie de discuter d'un projet ou d'une opportunité ?</p>
+        <p class="contact-email">
+          <a href="mailto:joseph.sauve@hotmail.com">joseph.sauve@hotmail.com</a>
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:joseph.sauve@hotmail.com" class="btn">Envoyer un courriel</a>
+          <a href="assets/cv/CV-Joseph-Sauve.pdf" class="btn btn-outline" target="_blank" rel="noopener">Voir mon CV</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Joseph Sauvé</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

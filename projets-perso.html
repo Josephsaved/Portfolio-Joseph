@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets personnels — Joseph Sauvé</title>
+  <meta name="description" content="Fabrication et bricolage personnel : vélo cargo, guidon sur mesure, foyer, bibliothèque et plus, soudure et usinage.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Aperçu de partage (LinkedIn, courriel, réseaux sociaux) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projets personnels — Joseph Sauvé">
+  <meta property="og:description" content="Fabrication et bricolage personnel : vélo cargo, guidon sur mesure, foyer, bibliothèque et plus, soudure et usinage.">
+  <meta property="og:image" content="image/perso/velo-cargo-2.jpg">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE / NAVIGATION (identique à index.html, liens ajustés) ===== -->
+  <header class="site-header">
+    <!-- Petit véhicule Baja qui traverse le bandeau au chargement de la page,
+         puis reste figé à droite (voir .baja-runner dans style.css) -->
+    <div class="baja-runner" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 22 L10 12 L40 12 L46 18 L58 18 L58 22 Z" fill="var(--color-accent)"/>
+        <path d="M14 12 L18 4 L34 4 L38 12" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="48" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="16" cy="24" r="2.5" fill="var(--color-surface)"/>
+        <circle cx="48" cy="24" r="2.5" fill="var(--color-surface)"/>
+      </svg>
+    </div>
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo">J. Sauvé</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#projets">Projets</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== EN-TÊTE DE PROJET ===== -->
+    <section class="project-hero">
+      <div class="container">
+        <a href="index.html#projets" class="back-link">← Retour aux projets</a>
+        <p class="hero-eyebrow">Bricolage &amp; fabrication</p>
+        <h1>Projets personnels</h1>
+        <p class="process-text">
+          En dehors de l'école et de la compétition, je fabrique pour le plaisir — un mélange de vélos,
+          de meubles et d'objets du quotidien, généralement conçus en CAO puis soudés et usinés à l'atelier.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FICHES PROJETS ===== -->
+    <section class="fiches">
+      <div class="container">
+        <div class="fiche-list">
+
+          <!-- Vélo cargo -->
+          <details class="fiche" open>
+            <summary>
+              <h3>Vélo cargo</h3>
+              <p class="fiche-role">Châssis en tubes d'acier soudés, plateforme de chargement à l'arrière</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Un vélo cargo construit à partir de tubes d'acier soudés, avec une plateforme à l'arrière
+                pour transporter du matériel. Peint en cabine de peinture avant l'assemblage final.
+              </p>
+              <div class="fiche-gallery">
+                <img src="image/perso/velo-cargo-1.jpg" alt="Cadre du vélo cargo en peinture, couleur violette" loading="lazy">
+                <img src="image/perso/velo-cargo-2.jpg" alt="Vélo cargo assemblé avec sa plateforme de chargement à l'arrière" loading="lazy">
+                <img src="image/perso/velo-cargo-3.jpg" alt="Vélo cargo vu de profil, plateforme et guidon visibles" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- Guidon vélo -->
+          <details class="fiche" open>
+            <summary>
+              <h3>Guidon de vélo sur mesure</h3>
+              <p class="fiche-role">Conçu en CAO, soudé à la tige d'acier</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Un guidon conçu sur mesure en CAO puis reproduit en tubes d'acier soudés à l'atelier.
+              </p>
+              <div class="fiche-gallery">
+                <img src="image/perso/guidon-cad-1.jpg" alt="Modèle CAO du guidon sur mesure" loading="lazy">
+                <img src="image/perso/guidon-cad-2.jpg" alt="Modèle CAO du guidon, vue d'ensemble" loading="lazy">
+                <img src="image/perso/guidon-soudure-1.jpg" alt="Guidon en tubes d'acier soudé sur la table de soudure" loading="lazy">
+                <img src="image/perso/guidon-soudure-2.jpg" alt="Détail d'un joint soudé du guidon" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- Rack vélo de montagne -->
+          <details class="fiche" open>
+            <summary>
+              <h3>Rack pour vélo de montagne</h3>
+              <p class="fiche-role">Support mural imprimé en 3D</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Un support mural pour ranger la fourche du vélo de montagne en hauteur et libérer de l'espace au sol.
+              </p>
+              <div class="fiche-gallery">
+                <img src="image/perso/rack-velo-1.jpg" alt="Fourche de vélo de montagne installée sur le support mural" loading="lazy">
+                <img src="image/perso/rack-velo-2.jpg" alt="Détail du support mural pour fourche de vélo" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- Site web — carte de vélo -->
+          <details class="fiche" open>
+            <summary>
+              <span class="tag tag-individuel">Codé avec l'aide de l'IA</span>
+              <h3>Freeride Mont-Bellevue</h3>
+              <p class="fiche-role">Carte interactive des sentiers de vélo de montagne</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Un site web présentant une carte interactive des sentiers de vélo de montagne du Mont Bellevue,
+                à Sherbrooke. Développé avec l'aide de l'intelligence artificielle.
+              </p>
+              <img src="image/perso/freeride-mont-bellevue.png" alt="Carte 3D interactive des sentiers de vélo de montagne du Mont Bellevue" class="fiche-img">
+              <a href="https://jizzopogo22.github.io/Freeride-mont-bellevue/" class="project-link" target="_blank" rel="noopener">Voir le site →</a>
+            </div>
+          </details>
+
+          <!-- Marteau -->
+          <details class="fiche" open>
+            <summary>
+              <span class="tag tag-collectif">Usinage fait en équipe</span>
+              <h3>Marteau</h3>
+              <p class="fiche-role">Tête en acier inoxydable usinée, manche aluminium</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Un marteau usiné en équipe : tête en acier et manche en aluminium.
+              </p>
+              <div class="fiche-gallery">
+                <img src="image/perso/marteau.jpg" alt="Marteau à tête en acier inoxydable et manche aluminium, avec son support imprimé en 3D" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- Pit à feu -->
+          <details class="fiche" open>
+            <summary>
+              <h3>Foyer extérieur</h3>
+              <p class="fiche-role">Bac en acier plié et soudé, conçu en CAO</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Un foyer extérieur conçu en CAO puis fabriqué en acier plié et soudé.
+              </p>
+              <div class="fiche-gallery">
+                <img src="image/perso/pit-a-feu-cad.png" alt="Modèle CAO du foyer extérieur" loading="lazy">
+                <img src="image/perso/pit-a-feu-fini.jpg" alt="Foyer extérieur terminé, installé dehors" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- Bibliothèque -->
+          <details class="fiche" open>
+            <summary>
+              <h3>Bibliothèque</h3>
+              <p class="fiche-role">Structure métallique, tablettes en bois à bord vivant</p>
+            </summary>
+            <div class="fiche-body">
+              <p class="process-text">
+                Une bibliothèque à structure métallique soudée, avec des tablettes en bois à bord vivant (live edge).
+              </p>
+              <div class="fiche-gallery">
+                <img src="image/perso/bibliotheque-fabrication.jpg" alt="Bibliothèque en fabrication à l'atelier, structure métallique et tablettes en bois" loading="lazy">
+                <img src="image/perso/bibliotheque-finie.jpg" alt="Bibliothèque terminée et installée" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERIE GÉNÉRALE — SOUDURE ET USINAGE ===== -->
+    <section class="skills-block">
+      <div class="container">
+        <h2 class="section-title">Soudure &amp; usinage — en vrac</h2>
+        <p class="process-text">
+          D'autres pièces fabriquées au fil de mes projets : soudure TIG, usinage conventionnel et découpe.
+        </p>
+        <div class="general-gallery">
+          <img src="image/perso/general-01.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-02.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-03.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-04.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-05.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-06.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-07.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-08.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-09.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-10.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-11.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-12.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-13.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-14.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-15.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-16.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-17.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-18.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-19.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+          <img src="image/perso/general-20.jpg" alt="Pièce fabriquée à l'atelier" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Joseph Sauvé</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

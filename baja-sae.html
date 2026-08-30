@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baja SAE — Joseph Sauvé</title>
+  <meta name="description" content="Détails de mon implication au sein du club Baja SAE de l'Université de Sherbrooke : suspension, direction, conception et validation.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Aperçu de partage (LinkedIn, courriel, réseaux sociaux) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Baja SAE — Joseph Sauvé">
+  <meta property="og:description" content="Détails de mon implication au sein du club Baja SAE de l'Université de Sherbrooke : suspension, direction, conception et validation.">
+  <meta property="og:image" content="image/baja-equipe.jpg">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE / NAVIGATION (identique à index.html, liens ajustés) ===== -->
+  <header class="site-header">
+    <!-- Petit véhicule Baja qui traverse le bandeau au chargement de la page,
+         puis reste figé à droite (voir .baja-runner dans style.css) -->
+    <div class="baja-runner" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 22 L10 12 L40 12 L46 18 L58 18 L58 22 Z" fill="var(--color-accent)"/>
+        <path d="M14 12 L18 4 L34 4 L38 12" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="48" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="16" cy="24" r="2.5" fill="var(--color-surface)"/>
+        <circle cx="48" cy="24" r="2.5" fill="var(--color-surface)"/>
+      </svg>
+    </div>
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo">J. Sauvé</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#projets">Projets</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== EN-TÊTE DE PROJET ===== -->
+    <section class="project-hero">
+      <div class="container">
+        <a href="index.html#projets" class="back-link">← Retour aux projets</a>
+        <p class="hero-eyebrow">Projet — Baja SAE</p>
+        <h1>Suspension &amp; direction — Université de Sherbrooke</h1>
+        <img src="image/baja-equipe.jpg" alt="Équipe Baja SAE de l'Université de Sherbrooke lors d'une compétition" class="project-hero-img">
+      </div>
+    </section>
+
+    <!-- ===== MON RÔLE ===== -->
+    <section class="role-block">
+      <div class="container">
+        <h2 class="section-title">Mon rôle</h2>
+        <ul class="role-list">
+          <li><strong>Poste (2026) :</strong> Directeur Suspension et Direction — Club Baja SAE, Université de Sherbrooke</li>
+          <li><strong>Statut :</strong> Membre fondateur (relance du groupe en 2024)</li>
+          <li><strong>Implication :</strong> Novembre 2023 → aujourd'hui, 5 compétitions Baja SAE</li>
+          <li><strong>Véhicule 2026 :</strong> Université de Sherbrooke, voiture #29 — compétitions Oregon (mai), New York (juin), Ohio (septembre)</li>
+        </ul>
+
+        <h3 class="subsection-title">Chronologie</h3>
+        <div class="table-wrap">
+          <table class="timeline-table">
+            <thead>
+              <tr><th>Année</th><th>Rôle</th><th>Réalisations clés</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2024</td>
+                <td>Responsable Freinage<br><span class="muted">(fondation du groupe)</span></td>
+                <td>Outil de calcul pour le dimensionnement des freins, soudure TIG du châssis 2024, conception du moyeu et intégration de l'assemblage de roue</td>
+              </tr>
+              <tr>
+                <td>2025</td>
+                <td>Suspension</td>
+                <td>2<sup>e</sup> itération du moyeu, porte-fusées, bras de suspension, direction ; essais dynamiques avec Wheel Force Transducer (WFT) et analyse des données</td>
+              </tr>
+              <tr>
+                <td>2026</td>
+                <td>Directeur Suspension et Direction</td>
+                <td>Géométrie complète (Altair), moyeux, porte-fusées, cardans, supervision de l'équipe suspension</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FICHES PROJETS TECHNIQUES ===== -->
+    <section class="fiches">
+      <div class="container">
+        <h2 class="section-title">Projets techniques</h2>
+        <p class="fiches-intro">Cliquez sur une fiche pour voir les détails (cas de charge, résultats, outils).</p>
+
+        <div class="fiche-list">
+
+          <!-- 1. Moyeu arrière -->
+          <details class="fiche" id="fiche-1">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>1. Moyeu arrière (Rear Hub 2026)</h3>
+              <p class="fiche-role">Conception détaillée</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Concevoir un moyeu arrière capable de tenir la durée de vie visée sur plusieurs saisons de compétition, tout en restant le plus léger possible.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Analyse par éléments finis (FEA) sous les cas de charge typiques d'une compétition Baja SAE (impacts, freinage, virages) pour repérer les zones critiques et ajuster la géométrie.</dd></div>
+                
+                <div class="spec"><dt>Outils</dt><dd>SolidWorks FEA </dd></div>
+              </dl>
+              <div class="fiche-gallery">
+                <img src="image/rear-hub.png" alt="Modèle CAO du moyeu arrière" loading="lazy">
+                <img src="image/rear-hub-fea1.png" alt="Résultat de simulation FEA du moyeu arrière — cas de couple" loading="lazy">
+                <img src="image/rear-hub-fea2.png" alt="Résultat de simulation FEA du moyeu arrière — cas de charge latérale" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- 2. Moyeu avant -->
+          <details class="fiche" id="fiche-2">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>2. Moyeu avant (Front Hub)</h3>
+              <p class="fiche-role">Conception détaillée</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Améliorer la fiabilité du roulement unidirectionnel et éliminer les pics de couple causés par l'embrayage, tout en allégeant la pièce.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Validation par FEA sous les charges de conduite, puis itération sur la géométrie pour intégrer un roulement scellé plus robuste sans ajouter de masse.</dd></div>
+                <div class="spec"><dt>Résultat</dt><dd>Une pièce plus légère qui loge un roulement de meilleure qualité, avec une marge de sécurité confortable.</dd></div>
+                <div class="spec"><dt>Matériau</dt><dd>Aluminium 7075-T6</dd></div>
+              </dl>
+              <div class="fiche-gallery">
+                <img src="image/hub-avant.png" alt="Modèle CAO du moyeu avant" loading="lazy">
+                <img src="image/hub-avant-fea.png" alt="Résultat de simulation FEA du moyeu avant" loading="lazy">
+                <img src="image/hub-avant-photo.png" alt="Photo de la pièce usinée du moyeu avant" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- 3. Porte-fusée avant -->
+          <details class="fiche" id="fiche-3">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>3. Porte-fusée avant (Front Upright)</h3>
+              <p class="fiche-role">Conception détaillée</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec">
+                  <dt>Démarche</dt>
+                  <dd>Repenser le porte-fusée avant pour accueillir un roulement scellé plus robuste, améliorer la géométrie de direction et réduire la masse — tout en remplaçant plusieurs composants d'origine (roulements, rotules) par des solutions plus fiables.</dd>
+                </div>
+                <div class="spec">
+                  <dt>Approche</dt>
+                  <dd>Simulation des cas de charge réels rencontrés en compétition (freinage, virage, chocs) via FEA, avec plusieurs itérations de géométrie pour équilibrer robustesse et masse.</dd>
+                </div>
+                <div class="spec"><dt>Résultat</dt><dd>Une pièce considérablement plus légère, en aluminium 7075-T6, tout en conservant une marge de sécurité adéquate.</dd></div>
+                <div class="spec"><dt>Validation physique</dt><dd>Voir <a href="#fiche-6">fiche « Test destructif de boulon »</a> ci-dessous</dd></div>
+              </dl>
+              <div class="fiche-gallery">
+                <img src="image/upright.png" alt="Modèle CAO du porte-fusée avant" loading="lazy">
+                <img src="image/fea-upright-1.png" alt="Résultat de simulation FEA du porte-fusée avant" loading="lazy">
+                <img src="image/assy-roue-avant.png" alt="Assemblage de la roue avant, incluant le porte-fusée et le moyeu" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- 4. Géométrie de suspension -->
+          <details class="fiche" id="fiche-4">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>4. Géométrie de suspension (Altair MotionSolve/MotionView)</h3>
+              <p class="fiche-role">Conception cinématique avant/arrière complète, sur toute la course de suspension</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Revoir la géométrie de suspension avant et arrière pour corriger un comportement sous-vireur identifié la saison précédente et améliorer la maniabilité générale du véhicule.</dd></div>
+                <div class="spec">
+                  <dt>Approche</dt>
+                  <dd>Modélisation et simulation dans Altair MotionSolve/MotionView pour ajuster ensemble plusieurs paramètres clés : centres de roulis, variation de pincement en débattement (bump steer), gain de carrossage, rayon de pivotement et géométrie de direction (Ackermann).</dd>
+                </div>
+                <div class="spec"><dt>Résultat</dt><dd>Une géométrie qui corrige le sous-virage observé en 2025, avec un comportement de direction plus cohérent en virage serré.</dd></div>
+                <div class="spec"><dt>Outils</dt><dd>Altair MotionSolve, Altair MotionView</dd></div>
+              </dl>
+              <img src="image/motion-view.png" alt="Capture d'écran d'Altair MotionView montrant le modèle cinématique de suspension" class="fiche-img" loading="lazy">
+            </div>
+          </details>
+
+          <!-- 5. Wheel Force Transducer -->
+          <details class="fiche" id="fiche-5">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>5. Analyse de forces au Wheel Force Transducer (WFT)</h3>
+              <p class="fiche-role">Cas de charge officiels — rédaction du rapport d'équipe, analyse de données</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Plutôt que de dimensionner les composants de suspension avec des marges théoriques conservatrices, mesurer les charges réellement subies par le véhicule en conditions de compétition.</dd></div>
+                <div class="spec">
+                  <dt>Approche</dt>
+                  <dd>Instrumentation du véhicule avec un capteur Wheel Force Transducer, série d'essais réels reproduisant les dynamiques typiques d'une compétition Baja SAE, puis traitement des données de force et de moment via un outil développé en Python.</dd>
+                </div>
+                <div class="spec"><dt>Application</dt><dd>Les cas de charge tirés de ces essais ont servi de base au dimensionnement de tous les composants de suspension 2026, validés numériquement dans Altair.</dd></div>
+                <div class="spec"><dt>Résultat</dt><dd>Des composants de suspension nettement plus légers, sans compromettre la fiabilité, grâce à des cas de charge basés sur des données réelles plutôt que sur des hypothèses conservatrices.</dd></div>
+              </dl>
+              <img src="image/wft.png" alt="Wheel Force Transducer monté sur le véhicule Baja SAE" class="fiche-img" loading="lazy">
+            </div>
+          </details>
+
+          <!-- 6. Test destructif de boulon -->
+          <details class="fiche" id="fiche-6">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>6. Test destructif de boulon en double cisaillement</h3>
+              <p class="fiche-role">Validation expérimentale — Front Upright</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Valider expérimentalement un assemblage boulonné critique du porte-fusée avant plutôt que de se fier uniquement à la simulation.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Montage d'essai avec cellule de charge, chargement progressif jusqu'à la rupture pour observer le comportement réel de l'assemblage (élastique, puis plastique, puis rupture) et le comparer aux prédictions FEA.</dd></div>
+                <div class="spec"><dt>Résultat</dt><dd>L'assemblage a démontré une marge de sécurité confirmée à la charge cible, avec une déformation purement élastique en dessous de ce seuil. Le mode de rupture observé à plus haute charge a permis de mieux comprendre les points faibles de l'assemblage.</dd></div>
+              </dl>
+              <div class="fiche-gallery">
+                <img src="image/test-bolt-load-cell.png" alt="Montage d'essai avec cellule de charge pour le test destructif du boulon" loading="lazy">
+                <img src="image/test-bolt.png" alt="Boulon après le test destructif en double cisaillement" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- 7. Passive Rear Steer — EN COURS -->
+          <details class="fiche" id="fiche-7">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <span class="tag tag-encours">En cours</span>
+              <h3>7. Direction arrière passive (Passive Rear Steer)</h3>
+              <p class="fiche-role">Projet en cours</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Explorer un concept de direction arrière passive pour réduire le rayon de braquage en virage serré, sans ajouter de mécanisme actif.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Un bras de suspension conçu pour induire un léger pincement en compression, assistant la roue extérieure en virage. Plusieurs pistes sont testées en parallèle pour ajuster la précharge du mécanisme (bagues imprimées, rondelles à ressort, etc.).</dd></div>
+                <div class="spec"><dt>Statut</dt><dd>Conception itérative en cours</dd></div>
+              </dl>
+              <img src="image/rear-steer.png" alt="Modèle CAO du concept de direction arrière passive" class="fiche-img" loading="lazy">
+            </div>
+          </details>
+
+          <!-- 8. Flip switch -->
+          <details class="fiche" id="fiche-8">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>8. Flip switch</h3>
+              <p class="fiche-role">Support d'amortisseur à position multiple</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Concevoir un support d'amortisseur permettant de modifier la garde au sol du véhicule grâce à plusieurs positions de montage.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Optimisation topologique pour alléger la pièce, puis fabrication combinant découpe laser, usinage conventionnel et soudure.</dd></div>
+              </dl>
+              <div class="video-embed video-embed-vertical">
+                <iframe src="https://www.youtube.com/embed/6m_L_EceCeI" title="Vidéo du support d'amortisseur à position multiple (Flip switch)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RÉSULTATS D'ÉQUIPE (COLLECTIF) ===== -->
+    <section class="team-results">
+      <div class="container">
+        <h2 class="section-title">
+          Résultats d'équipe <span class="tag tag-collectif">Collectif</span>
+        </h2>
+        <div class="team-results-content">
+          <img src="image/baja-oregon.jpg" alt="Véhicule Baja SAE #29 en compétition en Oregon" class="team-results-img">
+          <div class="competition-results">
+            <div class="competition-block">
+              <h3 class="subsection-title">Oregon — 2026</h3>
+              <div class="stat-row">
+                <div class="stat"><span class="stat-value">5<sup>e</sup></span><span class="stat-label">Classement général</span></div>
+                <div class="stat"><span class="stat-value">3<sup>e</sup></span><span class="stat-label">Suspension &amp; traction</span></div>
+                <div class="stat"><span class="stat-value">2<sup>e</sup></span><span class="stat-label">Endurance</span></div>
+              </div>
+            </div>
+            <div class="competition-block">
+              <h3 class="subsection-title">New York — 2026</h3>
+              <div class="stat-row">
+                <div class="stat"><span class="stat-value">8<sup>e</sup></span><span class="stat-label">Classement général</span></div>
+                <div class="stat"><span class="stat-value">5<sup>e</sup></span><span class="stat-label">Endurance</span></div>
+                <div class="stat"><span class="stat-value">3<sup>e</sup></span><span class="stat-label">Maniabilité</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FABRICATION / COMPÉTENCES PRATIQUES ===== -->
+    <section class="skills-block">
+      <div class="container">
+        <h2 class="section-title">Fabrication &amp; compétences pratiques</h2>
+        <div class="skills-content">
+          <img src="image/baja-atelier.jpg" alt="Joseph Sauvé au travail sur la suspension du véhicule Baja SAE" class="skills-img">
+          <ul class="skills-list">
+            <li><strong>Soudage TIG</strong> — cage de sécurité (roll cage) en acier chromoly 4130, châssis 2024</li>
+            <li><strong>Soudage aluminium</strong> — case de CVT</li>
+            <li><strong>Usinage conventionnel</strong> — plusieurs pièces au tour et à la fraiseuse manuelle</li>
+            
+            <li><strong>Instrumentation &amp; acquisition de données</strong> — capteurs de force/jauges de déformation (Wheatstone), traitement de données (Python/MATLAB)</li>
+            <li><strong>Système de freinage complet (2024)</strong> — outil de calcul pour dimensionnement et sélection de composants, intégration véhicule</li>
+          </ul>
+        </div>
+
+        <div class="welding-gallery">
+          <figure>
+            <img src="image/soudure-frame.jpg" alt="Soudage TIG de la cage de sécurité (roll cage) en acier chromoly" loading="lazy">
+            <figcaption>Soudage TIG — cage de sécurité, châssis 2024</figcaption>
+          </figure>
+          <figure>
+            <img src="image/soudure-alu.jpg" alt="Soudage aluminium sur une pièce du véhicule" loading="lazy">
+            <figcaption>Soudage aluminium</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Joseph Sauvé</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiquidC — Joseph Sauvé</title>
+  <meta name="description" content="Projet de fin de baccalauréat : conception d'une machine de liquéfaction de CO2 pour Skyrenu inc.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Aperçu de partage (LinkedIn, courriel, réseaux sociaux) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LiquidC — Joseph Sauvé">
+  <meta property="og:description" content="Projet de fin de baccalauréat : conception d'une machine de liquéfaction de CO2 pour Skyrenu inc.">
+  <meta property="og:image" content="image/liquidc/prototype_cad_global.jpg">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE / NAVIGATION (identique à index.html, liens ajustés) ===== -->
+  <header class="site-header">
+    <!-- Petit véhicule Baja qui traverse le bandeau au chargement de la page,
+         puis reste figé à droite (voir .baja-runner dans style.css) -->
+    <div class="baja-runner" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 22 L10 12 L40 12 L46 18 L58 18 L58 22 Z" fill="var(--color-accent)"/>
+        <path d="M14 12 L18 4 L34 4 L38 12" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="16" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="48" cy="24" r="6" fill="var(--color-text)"/>
+        <circle cx="16" cy="24" r="2.5" fill="var(--color-surface)"/>
+        <circle cx="48" cy="24" r="2.5" fill="var(--color-surface)"/>
+      </svg>
+    </div>
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo">J. Sauvé</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#projets">Projets</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== EN-TÊTE DE PROJET ===== -->
+    <section class="project-hero">
+      <div class="container">
+        <a href="index.html#projets" class="back-link">← Retour aux projets</a>
+        <p class="hero-eyebrow">Projet de fin de baccalauréat</p>
+        <h1>LiquidC — Machine de liquéfaction de CO2</h1>
+        <img src="image/liquidc/prototype_cad_global.jpg" alt="Rendu CAO du prototype complet de la machine de liquéfaction de CO2" class="project-hero-img">
+      </div>
+    </section>
+
+    <!-- ===== CONTEXTE ===== -->
+    <section class="role-block">
+      <div class="container">
+        <h2 class="section-title">Contexte</h2>
+        <ul class="role-list">
+          <li><strong>Mandat :</strong> Skyrenu inc. — l'entreprise capte du CO2 atmosphérique (technologie Direct Air Capture) mais n'avait pas de moyen de le liquéfier à petit échelle pour le transport</li>
+          <li><strong>Cadre académique :</strong> Projet de fin de baccalauréat en génie mécanique, Université de Sherbrooke (PMC660/PMC760)</li>
+          <li><strong>Objectif de l'équipe :</strong> Concevoir et réaliser une preuve de concept automatisée liquéfiant le CO2 capté</li>
+          <li><strong>Mon rôle :</strong> Conception détaillée et validation expérimentale des sous-systèmes de déshumidification et de remplissage</li>
+        </ul>
+
+        <div class="quick-stats">
+          <div class="stat-row">
+            <div class="stat"><span class="stat-value">30 t/an</span><span class="stat-label">Capacité de traitement visée</span></div>
+            <div class="stat"><span class="stat-value">95&nbsp;%</span><span class="stat-label">Pureté visée du CO2 liquéfié</span></div>
+            <div class="stat"><span class="stat-value">5' × 5'</span><span class="stat-label">Empreinte au sol maximale</span></div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Comment ça fonctionne</h3>
+        <p class="process-text">
+          Le prototype repose sur un cycle de Linde (compression, refroidissement, puis détente Joule-Thomson pour
+          liquéfier le gaz), auquel l'équipe a ajouté une section de déshumidification et de purification en amont.
+          Il comprend quatre sous-systèmes majeurs : déshumidification, compression (2 étages), séparation et
+          remplissage. J'ai fait la conception de deux maillons de cette chaîne — la
+          déshumidification et le remplissage — détaillés ci-dessous.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FICHES SOUS-SYSTÈMES ===== -->
+    <section class="fiches">
+      <div class="container">
+        <h2 class="section-title">Sous-systèmes conçus</h2>
+        <p class="fiches-intro">Cliquez sur une fiche pour voir les détails.</p>
+
+        <div class="fiche-list">
+
+          <!-- 1. Déshumidification -->
+          <details class="fiche" id="fiche-deshumidification">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>Déshumidification</h3>
+              <p class="fiche-role">Retirer l'humidité du gaz source avant la section cryogénique</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Le gaz capté contient beaucoup d'humidité. Non traitée, cette eau gèlerait dans la section cryogénique en aval et formerait un composé corrosif pour les composants. Il fallait assécher le gaz de façon fiable, et en continu.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Combinaison de deux technologies en série : un condenseur retire d'abord le gros de l'humidité, puis un système à double colonne de tamis moléculaire finit l'assèchement — pendant qu'une tour adsorbe l'eau, l'autre se régénère par chauffage, avec bascule automatique entre les deux pilotée par un capteur de point de rosée.</dd></div>
+                <div class="spec"><dt>Résultat</dt><dd>Un point de rosée très bas atteint en sortie, avec une autonomie de plusieurs heures avant régénération — permettant un fonctionnement continu sans intervention.</dd></div>
+              </dl>
+              <div class="fiche-gallery">
+                <img src="image/liquidc/pid_deshumidification.jpg" alt="Schéma de tuyauterie et d'instrumentation (P&ID) du système de déshumidification" loading="lazy">
+                <img src="image/liquidc/schema_dessiccant_simplifie.jpg" alt="Schéma de principe simplifié du système de dessiccant à double colonne" loading="lazy">
+                <img src="image/liquidc/assemblage_dessiccant.jpg" alt="Vue d'assemblage mécanique détaillée du système de dessiccant" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+          <!-- 2. Remplissage -->
+          <details class="fiche" id="fiche-remplissage">
+            <summary>
+              <span class="tag tag-individuel">Contribution individuelle</span>
+              <h3>Remplissage</h3>
+              <p class="fiche-role">Transférer le CO2 liquide vers les bonbonnes de transport</p>
+            </summary>
+            <div class="fiche-body">
+              <dl class="spec-list">
+                <div class="spec"><dt>Démarche</dt><dd>Transférer le CO2 liquide récolté, proche de son point triple, vers des bonbonnes de transport, en gérant un équilibre liquide-gaz précaire — sans avoir recours à une pompe cryogénique, écartée pour son coût et sa complexité.</dd></div>
+                <div class="spec"><dt>Approche</dt><dd>Un remplissage passif par différentiel de pression contrôlé, en trois temps : refroidissement de la bonbonne cible, remplissage continu jusqu'à saturation, puis détection de fin par mesure de poids (cellules de charge) et bascule automatique vers une bonbonne vide pendant que l'opérateur retire la pleine.</dd></div>
+                <div class="spec"><dt>Résultat</dt><dd>Un système qui ne demande une intervention humaine qu'à intervalles de quelques heures (changement de bouteilles), avec une sécurité intrinsèque assurée par des soupapes sur chaque segment du circuit.</dd></div>
+              </dl>
+              <div class="fiche-gallery">
+                <img src="image/liquidc/pid_remplissage.jpg" alt="Schéma de tuyauterie et d'instrumentation (P&ID) du système de remplissage" loading="lazy">
+                <img src="image/liquidc/vannes_remplissage_liquide_gaz.jpg" alt="Assemblages de vannes du système de remplissage, sections liquide et gaz" loading="lazy">
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Joseph Sauvé</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
